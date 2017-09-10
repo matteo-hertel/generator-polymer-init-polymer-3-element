@@ -25,6 +25,11 @@ module.exports = class extends Generator {
       name: 'packageLicense',
       message: 'What would you like the license to be set as in the package.json?',
       default: 'MIT'
+    }, {
+      type: 'input',
+      name: 'elementDescription',
+      message: 'Brief description of the element',
+      default: ''
     }
     ];
 
@@ -34,9 +39,20 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    const elementName = this.props.elementName;
+    console.log(elementName);
+    /**
+     * Copy the whole content of the template folder
+     */
     this.fs.copyTpl(
       glob.sync(`${this.templatePath()}/**/*`),
       this.destinationPath(),
+      this.props
+    );
+
+    this.fs.move(
+      this.destinationPath('src/_element.js'),
+      this.destinationPath(`${elementName}.js`),
       this.props
     );
   }
