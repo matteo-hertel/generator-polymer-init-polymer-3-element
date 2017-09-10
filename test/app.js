@@ -15,7 +15,10 @@ describe('generator-polymer-init-polymer-3-element:app', () => {
 
   it('creates files', () => {
     assert.file([
-      'package.json'
+      'package.json',
+      'index.html',
+      `${prompts.elementName}.js`,
+      'demo'
     ]);
   });
   it('props are set correctly in package.json', () => {
