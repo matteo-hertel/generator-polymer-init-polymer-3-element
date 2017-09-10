@@ -1,6 +1,6 @@
 {
   "name": "generator-polymer-init-polymer-3-element",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An easy way to spin up Polymer3 elements ",
   "homepage": "",
   "author": {
@@ -28,7 +28,7 @@
   "repository": "",
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "test": "gulp watch"
   },
   "private": true,
   "devDependencies": {

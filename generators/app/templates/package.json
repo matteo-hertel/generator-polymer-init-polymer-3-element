@@ -1,6 +1,6 @@
 {
   "name": "<%= elementName %>",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "<%= authorName %>",
   "license": "<%= packageLicense %>",
@@ -8,9 +8,6 @@
   "dependencies": {
     "@polymer/polymer": "next",
     "@webcomponents/webcomponentsjs": "^1.0.10"
-  },
-  "resolutions": {
-    "@webcomponents/webcomponentsjs": "1.0.10"
   },
   "scripts": {
     "dev": "polymer serve --npm -o"
