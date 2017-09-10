@@ -2,7 +2,8 @@
 const Generator = require('yeoman-generator');
 const yosay = require('yosay');
 const glob = require('glob');
-
+const camelCase = require('lodash/camelCase');
+const upperFirst = require('lodash/upperFirst');
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
@@ -35,12 +36,13 @@ module.exports = class extends Generator {
 
     return this.prompt(prompts).then(props => {
       this.props = props;
+      this.props.className = upperFirst(camelCase(this.props.elementName));
+      console.log(this.props.className);
     });
   }
 
   writing() {
     const elementName = this.props.elementName;
-    console.log(elementName);
     /**
      * Copy the whole content of the template folder
      */
