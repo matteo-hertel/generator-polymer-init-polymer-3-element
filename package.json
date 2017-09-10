@@ -32,6 +32,7 @@
     "test:watch": "gulp watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^4.6.1",
     "eslint-config-xo-space": "^0.16.0",
