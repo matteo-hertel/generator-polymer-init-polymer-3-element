@@ -1,7 +1,7 @@
 {
   "name": "<%= elementName %>",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "<%= elementName %>.js",
   "author": "<%= authorName %>",
   "license": "<%= packageLicense %>",
   "flat": true,
