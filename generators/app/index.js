@@ -36,6 +36,8 @@ module.exports = class extends Generator {
 
     return this.prompt(prompts).then(props => {
       this.props = props;
+      // Auto create the class name from the elementName, I could let the user choose the class name
+      // but the consistency between the class name and the element name will be preserved this way
       this.props.className = upperFirst(camelCase(this.props.elementName));
       console.log(this.props.className);
     });
@@ -43,15 +45,13 @@ module.exports = class extends Generator {
 
   writing() {
     const elementName = this.props.elementName;
-    /**
-     * Copy the whole content of the template folder
-     */
+    // Copy the whole content of the template folder
     this.fs.copyTpl(
       glob.sync(`${this.templatePath()}/**/*`),
       this.destinationPath(),
       this.props
     );
-
+    // Rename the element with the prompted name
     this.fs.move(
       this.destinationPath('src/_element.js'),
       this.destinationPath(`${elementName}.js`),
@@ -60,6 +60,7 @@ module.exports = class extends Generator {
   }
 
   install() {
+    // Polymer will use yarn and not bower anymore
     this.installDependencies({
       bower: false,
       npm: false,
