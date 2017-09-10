@@ -46,6 +46,7 @@
     "yeoman-test": "^1.7.0"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "yeoman-generator": "^1.1.1",
     "yosay": "^2.0.1"
   }
