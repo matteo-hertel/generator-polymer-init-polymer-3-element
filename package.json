@@ -1,0 +1,52 @@
+{
+  "name": "generator-polymer-init-polymer-3-element",
+  "version": "0.0.0",
+  "description": "An easy way to spin up Polymer3 elements ",
+  "homepage": "",
+  "author": {
+    "name": "Matteo Hertel",
+    "email": "info@matteohertel.com",
+    "url": "https://blog.matteohertel.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "",
+    "yeoman-generator"
+  ],
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    },
+    "rules": {
+      "capitalized-comments": "off"
+    }
+  },
+  "repository": "",
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-xo-space": "^0.16.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-exclude-gitignore": "^1.2.0",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-nsp": "^2.4.2",
+    "gulp-plumber": "^1.1.0",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^1.1.1",
+    "yosay": "^2.0.1"
+  }
+}
