@@ -3,6 +3,7 @@
 [![npm version](https://badge.fury.io/js/generator-polymer-init-polymer-3-element.svg)](https://badge.fury.io/js/generator-polymer-init-polymer-3-element)
 
 [![NPM](https://nodei.co/npm/generator-polymer-init-polymer-3-element.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/generator-polymer-init-polymer-3-element/)
+
 A yeoman generator that integrates with the polymer cli to spin up polymer3 components
 
 ![](https://cdn.matteohertel.com/blog/2017/09yeoman-1505078819249.png)
