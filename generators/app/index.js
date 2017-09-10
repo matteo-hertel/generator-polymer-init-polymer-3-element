@@ -39,7 +39,6 @@ module.exports = class extends Generator {
       // Auto create the class name from the elementName, I could let the user choose the class name
       // but the consistency between the class name and the element name will be preserved this way
       this.props.className = upperFirst(camelCase(this.props.elementName));
-      console.log(this.props.className);
     });
   }
 

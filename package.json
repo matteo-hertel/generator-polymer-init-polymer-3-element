@@ -1,6 +1,6 @@
 {
   "name": "generator-polymer-init-polymer-3-element",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "An easy way to spin up Polymer3 elements ",
   "homepage": "",
   "author": {
@@ -29,7 +29,8 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp test",
-    "test:watch": "gulp watch"
+    "test:watch": "gulp watch",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
     "eslint": "^4.6.1",
@@ -42,7 +43,8 @@
     "gulp-nsp": "^2.4.2",
     "gulp-plumber": "^1.1.0",
     "yeoman-assert": "^3.0.0",
-    "yeoman-test": "^1.7.0"
+    "yeoman-test": "^1.7.0",
+    "semantic-release": "^7.0.2"
   },
   "dependencies": {
     "lodash": "^4.17.4",
