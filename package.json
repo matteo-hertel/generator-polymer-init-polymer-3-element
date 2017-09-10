@@ -28,7 +28,8 @@
   "repository": "",
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp watch"
+    "test": "gulp test",
+    "test:watch": "gulp watch"
   },
   "private": true,
   "devDependencies": {
@@ -37,7 +38,6 @@
     "gulp": "^3.9.1",
     "gulp-eslint": "^4.0.0",
     "gulp-exclude-gitignore": "^1.2.0",
-    "gulp-istanbul": "^1.1.2",
     "gulp-line-ending-corrector": "^1.0.1",
     "gulp-mocha": "^4.3.1",
     "gulp-nsp": "^2.4.2",
