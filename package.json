@@ -25,7 +25,7 @@
       "capitalized-comments": "off"
     }
   },
-  "repository": "",
+  "repository": "https://github.com/matteo-hertel/generator-polymer-init-polymer-3-element",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp test",
