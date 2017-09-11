@@ -20,7 +20,7 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'authorName',
       message: 'What would you like the element author to be set as in the package.json?',
-      default: 'Amazing Polymer Developer<amazing@polymer.dev>'
+      default: 'Polymer Developer<you@polymer.dev>'
     }, {
       type: 'input',
       name: 'packageLicense',
