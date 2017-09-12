@@ -1,6 +1,8 @@
 # Generator-polymer-init-polymer-3-element
 [![Build Status](https://travis-ci.org/matteo-hertel/generator-polymer-init-polymer-3-element.svg?branch=master)](https://travis-ci.org/matteo-hertel/generator-polymer-init-polymer-3-element)
 [![npm version](https://badge.fury.io/js/generator-polymer-init-polymer-3-element.svg)](https://badge.fury.io/js/generator-polymer-init-polymer-3-element)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 
 [![NPM](https://nodei.co/npm/generator-polymer-init-polymer-3-element.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/generator-polymer-init-polymer-3-element/)
 
