@@ -43,13 +43,13 @@
     "gulp-mocha": "^4.3.1",
     "gulp-nsp": "^2.4.2",
     "gulp-plumber": "^1.1.0",
+    "semantic-release": "^7.0.2",
     "yeoman-assert": "^3.0.0",
-    "yeoman-test": "^1.7.0",
-    "semantic-release": "^7.0.2"
+    "yeoman-test": "^1.7.0"
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "yeoman-generator": "^1.1.1",
+    "yeoman-generator": "^2.0.0",
     "yosay": "^2.0.1"
   }
 }
